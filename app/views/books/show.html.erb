@@ -1,0 +1,7 @@
+<div class="success-message"> <%= notice %> </div>
+
+<div class="show-padding"><b>Title:</b> <%= @book.title %></div>
+
+<div class="show-padding"><b>Body:</b> <%= @book.body %></div>
+
+<div class="show-footer-padding"><%= link_to "Edit", "http://localhost:3000/bookers-level1.herokuapp.com/books/#{@book.id}/edit" %> | <%= link_to "Back", 'http://localhost:3000/bookers-level1.herokuapp.com/books' %></div>

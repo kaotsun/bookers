@@ -1,0 +1,10 @@
+<h1>Editing Book</h1>
+<%= form_for(@book, url:"http://localhost:3000/bookers-level1.herokuapp.com/books/#{@book.id}") do |f| %>
+<%= render 'layouts/error_messages', model: f.object %>
+    <b>Title</b><br>
+    <%= f.text_field :title %><br>
+    <b>Body</b><br>
+    <%= f.text_area :body %><br>
+    <%= f.submit 'Update Book' %>    
+<% end %>
+<div class="edit-footer-padding"><%= link_to "Show", "http://localhost:3000/bookers-level1.herokuapp.com/books/#{@book.id}" %> | <%= link_to "Back", 'http://localhost:3000/bookers-level1.herokuapp.com/books' %></div>
